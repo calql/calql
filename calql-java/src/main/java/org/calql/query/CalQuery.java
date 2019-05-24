@@ -15,5 +15,20 @@
  */
 package org.calql.query;
 
-public class CalQuery {
+public final class CalQuery {
+    private CalQuery() {
+    }
+
+    public static class Builder {
+        private Builder() {
+        }
+
+        public CalQuery build() {
+            return new CalQuery();
+        }
+    }
+
+    public static Builder builder() {
+        return new Builder();
+    }
 }

@@ -20,6 +20,6 @@ import org.junit.jupiter.api.Test;
 public class TestCalQuery {
     @Test
     public void testCreate() {
-        new CalQuery();
+        CalQuery.builder().build();
     }
 }
